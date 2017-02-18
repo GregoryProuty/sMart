@@ -1,40 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Router, Route, IndexRoute, browserHistory } from 'react-router';
 
-class Clock extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {date: new Date()};
-  }
-
-  componentDidMount() {
-    this.timerID = setInterval(
-      () => this.tick(),
-      1000
-    );
-  }
-
-  componentWillUnmount() {
-    clearInterval(this.timerID);
-  }
-
-  tick() {
-    this.setState({
-      date: new Date()
-    });
-  }
-
-  render() {
-    return (
-      <div>
-        <h1>Hello, world!</h1>
-        <h2>It is {this.state.date.toLocaleTimeString()}.</h2>
-      </div>
-    );
-  }
-}
+import App from './App.jsx';
+import Home from './containers/Home.jsx';
+import Category from './containers/Category.jsx';
+// import About from './containers/About';
+// import Posts from './containers/Posts';
+// import Post from './containers/Post';
 
 ReactDOM.render(
-  <Clock />,
+  <Router history={browserHistory}>
+    <Route path="/" component={App}>
+      <IndexRoute component = {Home} />
+      <Route path=":category" component={Category}/>
+    </Route>
+  </Router>,
   document.getElementById('app')
 );

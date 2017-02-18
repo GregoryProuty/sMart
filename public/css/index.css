@@ -1,0 +1,11 @@
+.navbar-right {
+  margin-right: 15px !important;
+}
+
+ul {
+  list-style-type: none !important;
+}
+
+a {
+    text-decoration: none !important;
+}
