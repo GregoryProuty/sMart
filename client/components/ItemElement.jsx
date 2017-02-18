@@ -1,27 +1,21 @@
-import React from 'react';
+import React from 'react'
+import { Card, Icon, Image } from 'semantic-ui-react'
 
-
-class ItemElement extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
-  render() {
-    return (
-      <div>
-        <div>
-          <a>
-            <img src="https://img.letgo.com/images/8d/03/35/53/8d03355348607013ca1a038d788ebd30.jpg?impolicy=img_230" alt="silver ray-ban full framed aviator sunglasses with case" />
-          </a>
-          <div className="product-info">
-            <a href="https://us.letgo.com/en/i/silver-ray-ban-full-framed-aviator-sunglasses-with-case_67679e06-f4b0-4fac-abf8-3152e8765328" class="title" title="silver ray-ban full framed aviator sunglasses with case">Silver Ray-Ban Full Framed Aviator Sunglasses With Case</a>
-            <span class="city">Sanfran, CA</span>
-          </div>
-        </div>
-      </div>
-    );
-  }
-}
-
+const ItemElement = () => (
+  <Card>
+    <Image src='https://images.craigslist.org/00H0H_bLAIxNTESZ7_600x450.jpg' />
+    <Card.Content>
+      <Card.Header>Daniel</Card.Header>
+      <Card.Meta>Joined in 2016</Card.Meta>
+      <Card.Description>Daniel is a comedian living in Nashville.</Card.Description>
+    </Card.Content>
+    <Card.Content extra>
+      <a>
+        <Icon name='user' />
+        10 Friends
+      </a>
+    </Card.Content>
+  </Card>
+)
 
 export default ItemElement;
