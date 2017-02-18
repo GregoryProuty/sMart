@@ -5,12 +5,12 @@
 #### GET /deliveries
 
 #### POST /deliveries
-
-| HTTP METHOD | POST            | GET       | PUT         | DELETE |
-| ----------- | --------------- | --------- | ----------- | ------ |
-| CRUD OP     | CREATE          | READ      | UPDATE      | DELETE |
-| /dogs       | Create new dogs | List dogs | Bulk update | Delete all dogs |
-| /dogs/1234  | Error           | Show Bo   | If exists, update Bo; If not, error | Delete Bo |
+* POST Parameters
+| Name        | Type            | Description| 
+| ----------- | --------------- | ---------  | 
+| CRUD OP     | CREATE          | READ       | 
+| /dogs       | Create new dogs | List dogs  | 
+| /dogs/1234  | Error           | Show Bo    | 
 
 #### POST /deliveries/quote
 
