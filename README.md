@@ -5,7 +5,6 @@
 #### GET /deliveries
 
 #### POST /deliveries
-* POST Parameters
 | Name        | Type            | Description| 
 | ----------- | --------------- | ---------  | 
 | CRUD OP     | CREATE          | READ       | 
