@@ -14,20 +14,20 @@ Query Parameters
 Response
 
 Status-Code: 200 OK
-  {
-     "count":172,
-     "next_page":"status=completed&limit=10&offset=10",
-     "previous_page":"",
-     "deliveries":[
-        {
-          // Delivery object 1 (omitted for clarity)
-        },
-        {
-          // Delivery object 2 (omitted for clarity)
-        },
-        // ... More delivery objects
-     ]
-  }
+    {
+       "count":172,
+       "next_page":"status=completed&limit=10&offset=10",
+       "previous_page":"",
+       "deliveries":[
+          {
+            // Delivery object 1 (omitted for clarity)
+          },
+          {
+            // Delivery object 2 (omitted for clarity)
+          },
+          // ... More delivery objects
+       ]
+    }
 #### POST /deliveries
 | Name        | Type            | Description| 
 | ----------- | --------------- | ---------  | 
