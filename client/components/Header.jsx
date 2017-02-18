@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Link } from 'react-router'
 class Header extends React.Component {
   constructor(props) {
     super(props);
@@ -19,7 +19,7 @@ class Header extends React.Component {
               </form>              
               <div className="navbar-right">
               <button type="button" className="btn btn-default navbar-btn">Log in</button>
-              <button type="button" className="btn btn-default navbar-btn">Sell Your Stuff</button>
+              <a type="button" className="btn btn-default navbar-btn" href="#/PostItem">Sell Your Stuff</a>
               </div>
             </div>
           </div>

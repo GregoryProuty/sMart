@@ -5,6 +5,7 @@ import { Router, Route, IndexRoute, browserHistory } from 'react-router';
 import App from './App.jsx';
 import Home from './containers/Home.jsx';
 import Category from './containers/Category.jsx';
+import PostItem from './containers/PostItem.jsx';
 // import About from './containers/About';
 // import Posts from './containers/Posts';
 // import Post from './containers/Post';
@@ -14,6 +15,7 @@ ReactDOM.render(
     <Route path="/" component={App}>
       <IndexRoute component = {Home} />
       <Route path=":category" component={Category}/>
+      <Route path="#/PostItem" component={PostItem}/>
     </Route>
   </Router>,
   document.getElementById('app')
