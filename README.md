@@ -14,6 +14,7 @@ Query Parameters
 Response
 
 Status-Code: 200 OK
+
     {
        "count":172,
        "next_page":"status=completed&limit=10&offset=10",
@@ -28,6 +29,7 @@ Status-Code: 200 OK
           // ... More delivery objects
        ]
     }
+    
 #### POST /deliveries
 | Name        | Type            | Description| 
 | ----------- | --------------- | ---------  | 
