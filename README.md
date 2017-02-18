@@ -2,7 +2,7 @@
 
 ## API Guide
 
-#### GET /deliveries
+### GET /deliveries
 
 Query Parameters
 
@@ -15,6 +15,7 @@ Query Parameters
 Response
 
 Status-Code: 200 OK
+Response body:
 
     {
        "count":172,
@@ -31,25 +32,41 @@ Status-Code: 200 OK
        ]
     }
 
-#### POST /deliveries
+### POST /deliveries
+
 | Name        | Type            | Description| 
 | ----------- | --------------- | ---------  | 
 | CRUD OP     | CREATE          | READ       | 
 | /dogs       | Create new dogs | List dogs  | 
 | /dogs/1234  | Error           | Show Bo    | 
 
-#### POST /deliveries/quote
+Request body:
 
-#### GET /deliveries/{delivery_id}
+    [
+        {
+            "title": "Raising Revenue",
+            "author_first_name": "Jane",
+            "author_last_name": "Smith",
+            "author_email": "jane.smith@example.gov",
+            "year": "2012",
+            "month": "August",
+            "day": "18",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. vehicula sit amet tristique lorem blandit. Nam augue est, bibendum et ultrices non, interdum in est. Quisque gravida orci lobortis... "
+        }
+    ]
+    
+### POST /deliveries/quote
 
-#### GET /deliveries/{delivery_id}/receipt
+### GET /deliveries/{delivery_id}
 
-#### GET /deliveries/{delivery_id}/ratings
+### GET /deliveries/{delivery_id}/receipt
 
-#### POST /deliveries/{delivery_id}/ratings
+### GET /deliveries/{delivery_id}/ratings
 
-#### GET /deliveries/{delivery_id}/rating_tags
+### POST /deliveries/{delivery_id}/ratings
 
-#### POST /deliveries/{delivery_id}/cancel
+### GET /deliveries/{delivery_id}/rating_tags
 
-#### GET /deliveries/regions
+### POST /deliveries/{delivery_id}/cancel
+
+### GET /deliveries/regions
