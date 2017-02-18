@@ -1,5 +1,5 @@
 import React from 'react';
-
+import ItemElement from '../components/ItemElement.jsx';
 
 class Category extends React.Component {
   constructor(props) {
@@ -9,7 +9,7 @@ class Category extends React.Component {
   render() {
     return (
       <div>
-      this category is 
+      <ItemElement /> 
       {this.props.params.category}
       </div>
     );

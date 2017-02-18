@@ -16,16 +16,19 @@ class CategoriesNav extends React.Component {
 
   render() {
     return (
-      <ul className="row">
-        <CategoryList to={'/fashion-accessories'}>Fashion and Accessories</CategoryList>
-        <CategoryList to={'/home-garden'}>Home and Garden</CategoryList>
-        <CategoryList to={'/electronics'}>Electronics</CategoryList>
-        <CategoryList to={'/baby-child'}>Baby and Child</CategoryList>
-        <CategoryList to={'/cars-motors'}>Cars and Motors</CategoryList>
-        <CategoryList to={'/sports-leisure-games'}>Sports, Leisure and Games</CategoryList>
-        <CategoryList to={'/movies-books-music'}>Movies, Books and Music</CategoryList>
-        <CategoryList to={'/other'}>Other</CategoryList>
-      </ul>
+      <div>
+        <ul className="row">
+          <h5>Categories</h5>
+          <CategoryList to={'/fashion-accessories'}>Fashion and Accessories</CategoryList>
+          <CategoryList to={'/home-garden'}>Home and Garden</CategoryList>
+          <CategoryList to={'/electronics'}>Electronics</CategoryList>
+          <CategoryList to={'/baby-child'}>Baby and Child</CategoryList>
+          <CategoryList to={'/cars-motors'}>Cars and Motors</CategoryList>
+          <CategoryList to={'/sports-leisure-games'}>Sports, Leisure and Games</CategoryList>
+          <CategoryList to={'/movies-books-music'}>Movies, Books and Music</CategoryList>
+          <CategoryList to={'/other'}>Other</CategoryList>
+        </ul>
+      </div>
     );
   }
 }
