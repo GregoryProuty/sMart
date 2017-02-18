@@ -5,6 +5,7 @@
 #### GET /deliveries
 
 Query Parameters
+
 | Name        | Type            | Description| 
 | ----------- | --------------- | ---------  | 
 | CRUD OP     | CREATE          | READ       | 
@@ -29,7 +30,7 @@ Status-Code: 200 OK
           // ... More delivery objects
        ]
     }
-    
+
 #### POST /deliveries
 | Name        | Type            | Description| 
 | ----------- | --------------- | ---------  | 
